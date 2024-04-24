@@ -73,6 +73,7 @@ ul li {
     text-shadow: 20px 5px 5px rgba(0, 0, 0, 0.1);
     max-width: 90%;
     text-overflow:clip;
+    /* word-break: break-all; */
 }
 
 ul li::before {
@@ -116,8 +117,16 @@ ul li span:hover {
 #created-by {
     position: absolute;
     left: 50%;
-    top: 95%;
+    top: 5%;
     transform: translate(-50%, -50%);
     font-size: 1.6vh;
-    color: rgb(0,0,0,0.5)
+    color: rgb(0,0,0,0.5);
+    text-wrap: nowrap;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
 }
